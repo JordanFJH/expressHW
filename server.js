@@ -9,6 +9,11 @@ app.get("/tip/:total/:tipPercentage", (req, res) => {
 })
 
 //GREETING
+app.get("/greeting", (req, res) => {
+    res.send("greeting, stranger")
+})
+
+
 app.get("/greeting/:name", (req, res) => {
     res.send(`How's it going ${req.params.name}`)
 })
